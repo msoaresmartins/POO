@@ -1,0 +1,45 @@
+$ git status --short
+ M README.md
+$ git add README.md
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+$ git commit -m Registra a atividade de Git de 27/10
+[main d41df9e] Registra a atividade de Git de 27/10
+ 1 file changed, 9 insertions(+), 2 deletions(-)
+$ git branch pratica-git
+$ git checkout pratica-git
+Switched to branch 'pratica-git'
+$ git add anotacoes-git.md
+warning: in the working copy of 'anotacoes-git.md', LF will be replaced by CRLF the next time Git touches it
+$ git commit -m Adiciona anotacoes no ramo pratica-git
+[pratica-git ccb38cc] Adiciona anotacoes no ramo pratica-git
+ 1 file changed, 12 insertions(+)
+ create mode 100644 anotacoes-git.md
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+$ git log --oneline --graph --all --decorate
+* ccb38cc (pratica-git) Adiciona anotacoes no ramo pratica-git
+* d41df9e (HEAD -> main) Registra a atividade de Git de 27/10
+* 4c0bbf4 (origin/main, origin/HEAD) Initial commit
+$ git branch -v
+* main        d41df9e [ahead 1] Registra a atividade de Git de 27/10
+  pratica-git ccb38cc Adiciona anotacoes no ramo pratica-git
+$ git push origin main
+To https://github.com/msoaresmartins/POO.git
+   4c0bbf4..d41df9e  main -> main
+$ git push --set-upstream origin pratica-git
+remote: 
+remote: Create a pull request for 'pratica-git' on GitHub by visiting:        
+remote:      https://github.com/msoaresmartins/POO/pull/new/pratica-git        
+remote: 
+To https://github.com/msoaresmartins/POO.git
+ * [new branch]      pratica-git -> pratica-git
+branch 'pratica-git' set up to track 'origin/pratica-git'.
+$ git ls-remote --heads origin
+d41df9e5deac084900ad0e5590a1a624f25fc065	refs/heads/main
+ccb38ccabd706cb039d9c4ea95b0a1d51aaf8b40	refs/heads/pratica-git
+$ git status --short --branch
+## main...origin/main
+?? prints/
+?? registros/
