@@ -1,55 +1,53 @@
 # 27/10 - AT-10-27-2 (bônus): Tutorial sobre GIT - prática
 
-[LAB] · Prazo: 02/11 · [Enunciado no Turing](https://turing.inf.ufg.br/mod/forum/view.php?id=56956)
+[Atividade no Turing](https://turing.inf.ufg.br/mod/forum/view.php?id=56956) — prazo: 02/11.
 
-Nesta atividade, usei um README e um arquivo de anotações para testar os comandos do [tutorial de Git](https://github.com/marceloakira/tutorials/blob/main/git/tutorial_git.md).
+## Criação e clonagem
 
-## Repositório e clonagem
+Criei o repositório público `POO` com um README e fiz a cópia para o computador com `git clone https://github.com/msoaresmartins/POO.git`.
 
-Criei o repositório público `POO` na minha conta, com um README inicial.
+![Repositório POO criado](prints/01-repositorio-criado.jpg)
 
-![Repositório público criado](prints/01-repositorio-criado.jpg)
+## Alteração na main
 
-Depois fiz a cópia para o computador com `git clone https://github.com/msoaresmartins/POO.git`. A saída do comando está em [registros/01-clonagem.txt](registros/01-clonagem.txt).
-
-## Primeiro commit e envio
-
-Alterei o README para identificar a atividade e registrei a mudança na `main`:
+Mudei o README para colocar o nome da atividade. Depois adicionei o arquivo, fiz o commit e enviei para o GitHub:
 
 ```sh
-git status --short
 git add README.md
 git commit -m "Registra a atividade de Git de 27/10"
 git push origin main
 ```
 
-O commit `d41df9e` apareceu no GitHub depois do envio.
+![Commit d41df9e na main](prints/02-primeiro-commit-publicado.jpg)
 
-![Primeiro commit enviado para a main](prints/02-primeiro-commit-publicado.jpg)
+## Criação de outro ramo
 
-## Segundo ramo
-
-Criei o ramo `pratica-git`, entrei nele e acrescentei `anotacoes-git.md`. Depois fiz outro commit e enviei o ramo.
+Criei o ramo `pratica-git` e troquei para ele:
 
 ```sh
 git branch pratica-git
 git checkout pratica-git
+```
+
+Nesse ramo, acrescentei o arquivo `anotacoes-git.md` com um resumo dos comandos. Fiz o segundo commit, voltei para a `main` e enviei o ramo:
+
+```sh
 git add anotacoes-git.md
 git commit -m "Adiciona anotacoes no ramo pratica-git"
 git checkout main
 git push --set-upstream origin pratica-git
 ```
 
-O commit dessa alteração é `ccb38cc`. O arquivo de anotações ficou [no ramo pratica-git](https://github.com/msoaresmartins/POO/blob/pratica-git/anotacoes-git.md).
+O arquivo de anotações está [no ramo pratica-git](https://github.com/msoaresmartins/POO/blob/pratica-git/anotacoes-git.md). Na `main` ele não aparece.
 
-![Ramos main e pratica-git no GitHub](prints/03-ramos-no-github.jpg)
+![Os dois ramos no GitHub](prints/03-ramos-no-github.jpg)
 
-## Conferência
+## Histórico
 
-Usei `git log --oneline --graph --all --decorate` para ver o histórico e `git ls-remote --heads origin` para conferir os dois ramos no GitHub.
+O commit `d41df9e` é a alteração do README. O `ccb38cc` é a anotação feita no outro ramo.
 
-![Histórico com os commits da prática](prints/04-historico-commits.jpg)
+![Histórico do ramo pratica-git](prints/04-historico-commits.jpg)
 
-O [registro dos comandos](registros/02-comandos.txt) contém as saídas reais, incluindo os dois `git push`. As capturas acima são do momento após esses envios; este relatório e os prints foram acrescentados depois.
+As capturas são dos primeiros envios. Depois acrescentei os prints e este texto. Também guardei a [saída da clonagem](registros/01-clonagem.txt) e os [comandos executados](registros/02-comandos.txt).
 
-Link para entrega: [github.com/msoaresmartins/POO](https://github.com/msoaresmartins/POO).
+Referência: [tutorial de Git usado na aula](https://github.com/marceloakira/tutorials/blob/main/git/tutorial_git.md).
