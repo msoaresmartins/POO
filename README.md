@@ -1,24 +1,20 @@
-# 27/10 - AT-10-27-2 (bônus): Tutorial sobre GIT - prática
+# Prática de Git — Programação Orientada a Objetos
 
-[Atividade no Turing](https://turing.inf.ufg.br/mod/forum/view.php?id=56956) — prazo: 02/11.
+Exercício de Git da disciplina de Programação Orientada a Objetos.
 
 ## Criação e clonagem
 
 Criei o repositório público `POO` com um README e fiz a cópia para o computador com `git clone https://github.com/msoaresmartins/POO.git`.
 
-![Repositório POO criado](prints/01-repositorio-criado.jpg)
-
 ## Alteração na main
 
-Mudei o README para colocar o nome da atividade. Depois adicionei o arquivo, fiz o commit e enviei para o GitHub:
+Mudei o README para identificar a prática. Depois adicionei o arquivo, fiz o commit e enviei para o GitHub:
 
 ```sh
 git add README.md
 git commit -m "Registra a atividade de Git de 27/10"
 git push origin main
 ```
-
-![Commit d41df9e na main](prints/02-primeiro-commit-publicado.jpg)
 
 ## Criação de outro ramo
 
@@ -48,6 +44,5 @@ O commit `d41df9e` é a alteração do README. O `ccb38cc` é a anotação feita
 
 ![Histórico do ramo pratica-git](prints/04-historico-commits.jpg)
 
-As capturas são dos primeiros envios. Depois acrescentei os prints e este texto. Também guardei a [saída da clonagem](registros/01-clonagem.txt) e os [comandos executados](registros/02-comandos.txt).
+As capturas são dos primeiros envios. Depois acrescentei os prints e este texto. Também guardei os [comandos executados](registros/02-comandos.txt).
 
-Referência: [tutorial de Git usado na aula](https://github.com/marceloakira/tutorials/blob/main/git/tutorial_git.md).
