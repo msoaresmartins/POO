@@ -1,9 +1,5 @@
-# 27/10 - AT-10-27-2: Tutorial sobre GIT - prática
+# Prática de Git — Programação Orientada a Objetos
 
-Atividade bônus de Programação Orientada a Objetos, na UFG.
+Este ramo registra uma prática de clonagem, commits, envio de alterações e criação de ramos. O primeiro arquivo usado foi este README.
 
-Nome no Turing: **[LAB] AT-10-27-2 (bônus): Tutorial sobre GIT - prática (prazo até 02/11)**.
-
-[Enunciado do professor](https://turing.inf.ufg.br/mod/forum/view.php?id=56956) · [Tutorial de Git](https://github.com/marceloakira/tutorials/blob/main/git/tutorial_git.md)
-
-Este repositório foi criado para praticar clonagem, commits, envio de alterações e criação de ramos. O primeiro arquivo usado na prática é este README.
+As [anotações de Git](anotacoes-git.md) resumem os comandos utilizados.
