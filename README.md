@@ -40,9 +40,8 @@ O arquivo de anotações está [no ramo pratica-git](https://github.com/msoaresm
 
 ## Histórico
 
-O commit `d41df9e` é a alteração do README. O `ccb38cc` é a anotação feita no outro ramo.
+O print abaixo mostra os commits da alteração do README e das anotações no outro ramo.
 
 ![Histórico do ramo pratica-git](prints/04-historico-commits.jpg)
 
 As capturas são dos primeiros envios. Depois acrescentei os prints e este texto. Também guardei os [comandos executados](registros/02-comandos.txt).
-
