@@ -2,9 +2,9 @@
 
 ## Índice das atividades de POO
 
-- [Prática de Git — 27/10](atividades/pratica-git-27-10/README.md): criação do repositório, commits e ramos.
-- [AT-11-03 — JavaFX](atividades/at-11-03-javafx/README.md): listagem e cadastro de produtos do AlphaField.
-- [AT-11-03-b — coleções e exceções](atividades/at-11-03-b-colecoes/README.md): operações em memória e tratamento de erros.
+- [Prática de Git — 27/10](atividades/Pr%C3%A1tica%20de%20Git%20-%20%2827-10%29/README.md): criação do repositório, commits e ramos.
+- [AT-11-03 — JavaFX](atividades/JavaFX%20e%20banco%20de%20dados%20-%20%2803-11%29/README.md): listagem e cadastro de produtos do AlphaField.
+- [AT-11-03-b — coleções e exceções](atividades/Cole%C3%A7%C3%B5es%20e%20exce%C3%A7%C3%B5es%20-%20%2803-11%29/README.md): operações em memória e tratamento de erros.
 
 Exercício de Git da disciplina de Programação Orientada a Objetos.
 
