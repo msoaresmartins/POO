@@ -1,9 +1,10 @@
 # Prática de Git — Programação Orientada a Objetos
 
-## Atividades de 03/11: AlphaField
+## Índice das atividades de POO
 
-- [AT-11-03 — interface JavaFX com cadastro e listagem](atividades/at-11-03-javafx/README.md)
-- [AT-11-03-b — coleções e tratamento de exceções](atividades/at-11-03-b-colecoes/README.md)
+- [Prática de Git — 27/10](atividades/pratica-git-27-10/README.md): criação do repositório, commits e ramos.
+- [AT-11-03 — JavaFX](atividades/at-11-03-javafx/README.md): listagem e cadastro de produtos do AlphaField.
+- [AT-11-03-b — coleções e exceções](atividades/at-11-03-b-colecoes/README.md): operações em memória e tratamento de erros.
 
 Exercício de Git da disciplina de Programação Orientada a Objetos.
 
@@ -50,3 +51,4 @@ O print abaixo mostra os commits da alteração do README e das anotações no o
 ![Histórico do ramo pratica-git](prints/04-historico-commits.jpg)
 
 As capturas são dos primeiros envios. Depois acrescentei os prints e este texto. Também guardei os [comandos executados](registros/02-comandos.txt).
+
