@@ -28,6 +28,7 @@ public class ProdutoController {
     }
 
     public Scene criarTela() {
+        codigo.setId("codigo"); nome.setId("nome"); preco.setId("preco"); quantidade.setId("quantidade");
         tabela.getColumns().addAll(coluna("Código", "codigo"), coluna("Nome", "nome"),
                 coluna("Preço", "preco"), coluna("Quantidade", "quantidade"), coluna("Validade", "validade"));
         tabela.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
@@ -37,6 +38,7 @@ public class ProdutoController {
         formulario.addRow(1, new Label("Preço:"), preco, new Label("Quantidade:"), quantidade);
         formulario.addRow(2, new Label("Validade:"), validade);
         Button cadastrar = new Button("Cadastrar produto");
+        cadastrar.setId("cadastrar");
         cadastrar.setOnAction(evento -> cadastrar());
         Button atualizar = new Button("Atualizar lista");
         atualizar.setOnAction(evento -> carregar());

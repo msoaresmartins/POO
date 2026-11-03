@@ -8,6 +8,8 @@ Dados inválidos e códigos duplicados geram `IllegalArgumentException`. Busca o
 
 Com JDK 21, nesta pasta: `javac -encoding UTF-8 *.java` e `java Main`. No BlueJ, abra a pasta como projeto, compile todas as classes e execute `Main.main`.
 
-## Capturas para a entrega
+## Demonstração
 
-Adicionar depois de executar: `prints/01-operacoes-normais.png` e `prints/02-erros-tratados-e-continuidade.png`.
+Ao executar `Main`, aparecem a inclusão, a listagem, a busca e a remoção. Depois aparecem três erros tratados (código duplicado, preço inválido e produto inexistente). A última linha mostra que o programa continuou e cadastrou outro produto após os erros.
+
+Para a entrega, falta uma captura da janela de saída do BlueJ ou do terminal com essa execução.
